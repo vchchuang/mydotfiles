@@ -28,7 +28,7 @@ Bundle 'gmarik/vundle'
 " "
 " " original repos on github
 "Bundle ABC
-
+Bundle "kien/ctrlp.vim"
 
 
 " General Settings
