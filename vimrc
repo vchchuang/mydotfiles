@@ -2,29 +2,34 @@
 " Chen-Han Chuang <vchchuang@gmail.com>
 " Fork me on GITHUB  https://github.com/
 "
-"Sections:
-" For pathogen.vim: auto load all plugins in .vim/bundle
-" General Settings
-" auto reload vimrc when editing it
-" terminal color settings
-" ignore these files while expanding wild chars
-" disable sound on errors
-" TAB setting{
-" status line {
-" C/C++ specific settings
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" http://www.erikzaadi.com/2012/03/19/auto-installing-vundle-from-your-vimrc/
+"setting up Vundle - the vim plugin bundler
+let iCanHazVundle=1
+let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
+if !filereadable(vundle_readme)
+     echo "Installing Vundle.."
+       echo ""
+         silent !mkdir -p ~/.vim/bundle
+           silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+             let iCanHazVundle=0
+          endif
+
+          set rtp+=~/.vim/bundle/vundle/
+          call vundle#rc()
+
+" let Vundle manage Vundle 
+" required!
+Bundle 'gmarik/vundle'
+"
+" " My Bundles here:
+" "
+" " original repos on github
+"Bundle ABC
 
 
-
-
-" For pathogen.vim: auto load all plugins in .vim/bundle
-
-let g:pathogen_disabled = []
-if !has('gui_running')
-   call add(g:pathogen_disabled, 'powerline')
-endif
-
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
 
 " General Settings
 
