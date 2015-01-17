@@ -66,7 +66,6 @@ if has("gui_running")	" GUI color and font settings
   highlight CursorLine          guibg=#003853 ctermbg=24  gui=none cterm=none
 else
 " terminal color settings
-  colors moria
 endif
 
 set clipboard=unnamed	" yank to the system register (*) by default
