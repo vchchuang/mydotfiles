@@ -290,6 +290,11 @@ endfun
 " PLUGIN SETTINGS
 "--------------------------------------------------------------------------- 
 
+"--- CtrlP ---
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_match_window = 'min:4,max:40'
 
 "
 " ------- vim-latex - many latex shortcuts and snippets {
