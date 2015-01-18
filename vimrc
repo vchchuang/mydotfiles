@@ -29,7 +29,7 @@ Bundle 'gmarik/vundle'
 " " original repos on github
 "Bundle ABC
 Bundle "kien/ctrlp.vim"
-
+Bundle "Lokaltog/vim-easymotion"
 
 " General Settings
 
