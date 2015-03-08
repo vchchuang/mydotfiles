@@ -1,13 +1,9 @@
 ##for .bashrc
 # Bash Theme
-export PS1="\[\e[0;32m\]\u@\[\e[m\e[3;4;34m\]\h\[\e[m \e[1;32m\]\W \$\[\e[m\]"
+#export PS1="\[\e[0;32m\]\u@\[\e[m\e[3;4;34m\]\h\[\e[m \e[1;32m\]\W \$\[\e[m\]"
 
 # Development
 PATH="/usr/local/csl/gcc-arm-none-eabi-4_8-2014q3/bin/:$PATH"
 alias 'ctags'='ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .'
 
-# For plugin
-if [ -f /home/vchc80/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh ];
-then 
-   source /home/vchc80/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
-fi
+
